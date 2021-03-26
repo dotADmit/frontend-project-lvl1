@@ -5,5 +5,5 @@
 
 [![workflow](https://github.com/dotADmit/frontend-project-lvl1/actions/workflows/node.js.yml/badge.svg)](https://github.com/dotADmit/frontend-project-lvl1/actions)
 
-### Instal and examples
+### Install and brain-even examples
 [![asciicast](https://asciinema.org/a/dJWOc34eyEHsOVLSIkULubrNF.svg)](https://asciinema.org/a/dJWOc34eyEHsOVLSIkULubrNF)
