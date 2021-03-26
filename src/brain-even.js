@@ -4,17 +4,7 @@ import getRandomNumber from './utilites.js';
 
 const printRule = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-const gameLogic = () => {
-  const number = getRandomNumber();
-  const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
-
-  const userAnswer = readlineSync.question(`Question: ${number}\nYour answer: `);
-  const answerIsRight = correctAnswer === userAnswer;
-
-  console.log(answerIsRight ? 'Correct' : `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
-
-  return answerIsRight;
-};
+const getAnswer = (num) => readlineSync.question(`Question: ${num}\nYour answer: `);
 
 export default (roundsToWin = 3) => {
   const userName = greeting();
@@ -24,7 +14,14 @@ export default (roundsToWin = 3) => {
   let iter = roundsToWin;
 
   while (iter) {
-    const answerIsRight = gameLogic();
+    const currentNumber = getRandomNumber();
+    const correctAnswer = currentNumber % 2 === 0 ? 'yes' : 'no';
+
+    const userAnswer = getAnswer(currentNumber);
+
+    const answerIsRight = correctAnswer === userAnswer;
+
+    console.log(answerIsRight ? 'Correct!' : `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
 
     if (!answerIsRight) break;
 
