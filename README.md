@@ -10,3 +10,6 @@
 
 ### Brain-calc examples
 [![asciicast](https://asciinema.org/a/403578.svg)](https://asciinema.org/a/403578)
+
+### Brain-gcd examles
+[![asciicast](https://asciinema.org/a/403581.svg)](https://asciinema.org/a/403581)
