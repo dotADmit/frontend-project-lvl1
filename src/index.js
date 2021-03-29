@@ -26,3 +26,16 @@ export const calculator = (a, b, operator) => {
     default: throw new Error(`Unknown sign state: '${operator}'!`);
   }
 };
+
+export const getGCD = (a, b) => {
+  if (b === a) return a;
+
+  const small = a > b ? b : a;
+  const big = a > b ? a : b;
+
+  if (big % small === 0) return small;
+
+  for (let i = Math.floor(small / 2); ; i -= 1) {
+    if (big % i === 0 && small % i === 0) return i;
+  }
+};

@@ -1,14 +1,15 @@
 import greeting from '../cli.js';
 import {
-  getAnswer,
   printRule,
   getRandomNumber,
+  getAnswer,
   printState,
+  getGCD,
 } from '../index.js';
 
 export default (roundsToWin = 3) => {
   const userName = greeting();
-  const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const rule = 'Find the greatest common divisor of given numbers.';
 
   printRule(rule);
 
@@ -17,10 +18,12 @@ export default (roundsToWin = 3) => {
   while (iter) {
     iter -= 1;
 
-    const currentNumber = getRandomNumber();
-    const correctAnswer = currentNumber % 2 === 0 ? 'yes' : 'no';
-    const userAnswer = getAnswer(currentNumber);
-    const answerIsRight = correctAnswer === userAnswer;
+    const firstOperand = getRandomNumber();
+    const secondOperand = getRandomNumber(51);
+
+    const correctAnswer = getGCD(firstOperand, secondOperand);
+    const userAnswer = getAnswer(`${firstOperand} ${secondOperand}`);
+    const answerIsRight = correctAnswer === +userAnswer;
 
     printState(answerIsRight, userAnswer, correctAnswer, userName);
 

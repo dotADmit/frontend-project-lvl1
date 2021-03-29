@@ -26,9 +26,7 @@ export default (roundsToWin = 3) => {
     if (operator === '*') secondOperand %= 10;
 
     const correctAnswer = calculator(firstOperand, secondOperand, operator);
-
     const userAnswer = getAnswer(`${firstOperand} ${operator} ${secondOperand}`);
-
     const answerIsRight = correctAnswer === +userAnswer;
 
     printState(answerIsRight, userAnswer, correctAnswer, userName);
