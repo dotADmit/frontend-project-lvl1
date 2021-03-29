@@ -7,3 +7,6 @@
 
 ### Install and brain-even examples
 [![asciicast](https://asciinema.org/a/dJWOc34eyEHsOVLSIkULubrNF.svg)](https://asciinema.org/a/dJWOc34eyEHsOVLSIkULubrNF)
+
+### Brain-calc examples
+[![asciicast](https://asciinema.org/a/403578.svg)](https://asciinema.org/a/403578)
