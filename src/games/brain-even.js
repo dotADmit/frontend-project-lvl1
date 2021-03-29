@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import greeting from './cli.js';
-import getRandomNumber from './utilites.js';
+import greeting from '../cli.js';
+import getRandomNumber from '../utilites.js';
 
 const printRule = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
