@@ -16,3 +16,6 @@
 
 ### Brain-progression examples
 [![asciicast](https://asciinema.org/a/403837.svg)](https://asciinema.org/a/403837)
+
+### Brain-prime examples
+[![asciicast](https://asciinema.org/a/404023.svg)](https://asciinema.org/a/404023)
