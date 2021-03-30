@@ -4,7 +4,7 @@ import {
   getRandomNumber,
   getAnswer,
   printState,
-  getGCD,
+  getGreatestCommonDivisior,
 } from '../index.js';
 
 export default (roundsToWin = 3) => {
@@ -21,7 +21,7 @@ export default (roundsToWin = 3) => {
     const firstOperand = getRandomNumber();
     const secondOperand = getRandomNumber(51);
 
-    const correctAnswer = getGCD(firstOperand, secondOperand);
+    const correctAnswer = getGreatestCommonDivisior(firstOperand, secondOperand);
     const userAnswer = getAnswer(`${firstOperand} ${secondOperand}`);
     const answerIsRight = correctAnswer === +userAnswer;
 

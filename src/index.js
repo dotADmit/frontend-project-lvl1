@@ -8,7 +8,7 @@ export const printState = (isCorrect, userAnswer, correctAnswer, userName) => {
   console.log(state);
 };
 
-export const getRandomNumber = (maxNumber = 100) => Math.floor(Math.random() * maxNumber);
+export const getRandomNumber = (maxNumber = 100) => Math.floor(Math.random() * maxNumber + 1);
 
 export const getAnswer = (num) => readlineSync.question(`Question: ${num}\nYour answer: `);
 
@@ -27,11 +27,10 @@ export const calculator = (a, b, operator) => {
   }
 };
 
-export const getGCD = (a, b) => {
+export const getGreatestCommonDivisior = (a, b) => {
   if (b === a) return a;
 
-  const small = a > b ? b : a;
-  const big = a > b ? a : b;
+  const [small, big] = a > b ? [b, a] : [a, b];
 
   if (big % small === 0) return small;
 
