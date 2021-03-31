@@ -22,7 +22,7 @@ const getSequence = () => {
 
 const getQuizAndKey = (sequence) => {
   const result = sequence.slice(0);
-  const indexToChange = getRandomNumber(result.length) - 1;
+  const indexToChange = getRandomNumber(result.length);
 
   const answer = result[indexToChange];
   result[indexToChange] = '..';
