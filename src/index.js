@@ -8,7 +8,7 @@ export const printState = (isCorrect, userAnswer, correctAnswer, userName) => {
   console.log(state);
 };
 
-export const getRandomNumber = (maxNumber = 100) => Math.floor(Math.random() * maxNumber + 1);
+export const getRandomNumber = (maxNumber = 100) => Math.floor(Math.random() * maxNumber);
 
 export const getAnswer = (num) => readlineSync.question(`Question: ${num}\nYour answer: `);
 

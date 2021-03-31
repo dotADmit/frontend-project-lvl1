@@ -17,9 +17,10 @@ export default (roundsToWin = 3) => {
 
   while (iter) {
     iter -= 1;
+    const minOperand = 1;
 
-    const firstOperand = getRandomNumber();
-    const secondOperand = getRandomNumber(51);
+    const firstOperand = getRandomNumber() + minOperand;
+    const secondOperand = getRandomNumber(51) + minOperand;
 
     const correctAnswer = getGreatestCommonDivisior(firstOperand, secondOperand);
     const userAnswer = getAnswer(`${firstOperand} ${secondOperand}`);

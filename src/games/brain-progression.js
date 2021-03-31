@@ -8,7 +8,7 @@ import {
 
 const getSequence = () => {
   const sequence = [];
-  const sequenceLength = getRandomNumber(5) + 4;
+  const sequenceLength = getRandomNumber(5) + 5;
   const sequenceStart = getRandomNumber(50);
   const step = getRandomNumber(15);
   sequence[0] = sequenceStart;
